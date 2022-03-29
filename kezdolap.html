@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="hu" style="overflow: auto; width: auto; height: auto; position:initial ;">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under GYM</title>
+  <link rel="icon" type="image/x-icon" href="istockphoto-972766938-1024x1024.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+footer {
+  text-align: left;
+  padding: 50px;
+  background-color: black;
+  color: yellow;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.mydiv{
+  text-align: center;
+  color: yellow;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.p{
+  color: orange;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  ;
+  text-align:center;
+  margin: auto;
+  border: 5px outset red;
+  background-color: lightblue;
+}
+
+  </style>
+</head>
+<body>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="http://127.0.0.1:5500/kezdolap.html">Kezdőlap</a>
+    <a href="http://127.0.0.1:5500/edzesek.html">Edzések</a>
+    <a href="http://127.0.0.1:5500/szabalyok.html">Szabályok</a>
+    <a href="http://127.0.0.1:5500/peldakepek.html">Példaképeink</a>
+  </div>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button>  
+    <button onclick="myFunction()">☀</button> 
+  </div> 
+  <div class="mydiv">
+    <h1>Nyitvatartás:</h1>
+    <p class="p">Hétfő:08-21:00
+       Kedd:08-21:00
+       Szerda:08-21:00
+       Csütörtök:08-21:00
+       Péntek:08-21:00
+    </p>
+  </div>
+  <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script> 
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+     
+      var mybutton = document.getElementById("myBtn");
+      
+      
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+  <footer>
+    <img data-v-a4759ba2="logo.png" src="logo.png" alt="logo"
+    >
+    <h6>Mi arra gyúrunk, hogy TE izmos legyél!</h6>
+    <h6>Nyomd keményen, vagy menj haza!</h6>
+    <a href="https://www.google.com/?hl=hu" class="fa fa-google" target="Google"></a>
+    <a href="https://www.facebook.com/" class="fa fa-facebook" target="Facebook"></a>
+    <a href="https://www.instagram.com" class="fa fa-instagram" target="Instagram"></a>
+    </footer>
+</body>
+</html>

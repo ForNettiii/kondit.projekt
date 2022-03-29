@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="hu" style="overflow: auto; width: auto; height: auto; position:initial ;">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Under GYM</title>
+  <link rel="icon" type="image/x-icon" href="istockphoto-972766938-1024x1024.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+footer {
+  text-align: left;
+  padding: 50px;
+  background-color: black;
+  color: yellow;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+.h1{
+   color: orange;
+   text-align: center;
+}
+.p{
+    text-align: center;
+}
+.img{
+    margin-left: auto;
+margin-right: auto;
+display: block;
+}
+h2{
+  color: orange;
+  text-align: left;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+  </style>
+</head>
+<body>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="http://127.0.0.1:5500/kezdolap.html">Kezdőlap</a>
+    <a href="http://127.0.0.1:5500/edzesek.html">Edzések</a>
+    <a href="http://127.0.0.1:5500/szabalyok.html">Szabályok</a>
+    <a href="http://127.0.0.1:5500/peldakepek.html">Példaképeink</a>
+  </div>
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button>  
+  </div>
+  <h2 class="">Tartalom</h2>
+  <p class="p">Az edzőterem néha elrettentő hely lehet. Tele van nagy, erős emberekkel, akik úgy néznek ki, hogy ismerik egymást, és igazán egyszerű rosszra gondolni. „Mi lesz, ha valamit rosszul csinálok?” vagy „Nem akarok senkit felidegesíteni azzal, hogy valami olyasmit csinálok, amit nem kellene.” Ne hagyja az ilyen gondolatokat beérni, csak az edzőtermen kívül fogják tartani és még messzebbre viszik fitness céljai elérésétől. De aggodalomra semmi ok, mi itt vagyunk, hogy tanácsokat és tippeket adjunk ahhoz, hogyan kell az edzőteremben viselkedni. Néhányat belőle már biztosan ismer, de vannak itt azért kényesebb problémák is. A siker kulcsa ennek a 11 szabálynak a betartása, amiknek köszönhetően elkerüli a kellemetlen érzést az edzőteremben. Lássunk tehát neki a munkának!</p>
+  <img class="img" src="elsoelso.webp" alt="" height="400px">
+  <h1 class="h1">1. Ne bicepszezzünk a guggoló állványnál</h1>
+  <p class="p">Ez a szabály sok vicc célpontja szokott lenni, de biztosak vagyunk benne, hogy Ön is sokszor találkozik olyanokkal, akik a guggoló állványt bicepszezésre használják. Ez miért rossz? Mivan, ha guggolást akarok csinálni? Mindig feltételeznie kell, hogy valaki szeretné használni az állványt, amelyet éppen Ön is használ.<strong>Tartson tiszteletben</strong> más embereket a konditeremben, és csak olyan gépeket használjon, amelyik arra a gyakorlatra valóak, amit éppen végez.</p>
+  <img class="img" src="elso kep.webp" alt="" height="400px">
+  <h1 class="h1">2.Tiszteljük a súlyokat</h1>
+  <p class="p">Valljuk be, <strong> súlyok csak vas darabok.</strong> Néha gumival vannak áthúzva a súlyzók, de az nem változtat azon, hogy mindig, amikor felemel egy súlyzót az edzőteremben, akkor valakinek a tulajdonát kölcsönzi ki. Igen, minden súly egy idő után elhasználódik, sőt még a nagy, fém súlyzók is, amelyek tönkretehetetlennek tűnnek. Úgy, ahogy az iskolában is tanították, tiszteletben kell tartani és vigyázni kell más gyerekeknek a játékaira, így működik ez az edzőteremben is.</p>
+  <img class="img" src="masodik kep.jpg" alt="" height="400px">
+  <h1 class="h1">3.Figyeljünk másokra</h1>
+  <p class="p">Az edzőterem egyesek számára igazán stresszes helynek számíthat, szóval az utolsó, amire egy újoncnak szüksége van, az egy “szétlőtt veterán” nem kívánt és kétséges tanácsai. A teremben csak az edzőknek szabadna tanácsokat adnia. Létezik viszont egy kivétel – ha valakit az a veszély fenyeget, hogy magának vagy másoknak sérülést okozhat. Például, ha egy újonc olyan görbe háttal akar felhúzást végezni, amilyennel minden nap a számítógépe előtt ül. Ebben az esetben jobb alternatíva eldobni az egót, mint egy sérült gerinccsatorna és tanáccsal látni el az illetőt.</p>
+  <img class="img" src="harmadik kep.jpg" alt="" height="400px">
+  <h1 class="h1">4. Ne dobáljuk a súlyokat</h1>
+  <p class="p">Ha egy széria után nagy hangzavarral dobja le a súlyokat, az edzőteremben mindenki egyre fog gondolni –  vagy nem tiszteli az edzőterem tulajdonát (lásd #2 szabály), vagy nem elég erős a súlyok lerakásához, amiket használ. De ne értsen félre minket, vannak olyan esetek, amikor szinte szükséges, hogy ledobja a súlyokat. Az Olimpiai játékokon a súlyemelésnél, ahol gumi ütéscsillapító burkolat van –  ott ez teljesen rendben van. Végső soron, ha valami olyan nehezet emel, a legbiztonságosabb módszer hogy visszahelyezze a földre az, hogy elengedi. De az etikett megköveteli, hogy a rúd csak egyszer pattanjon vissza a földről.</p>
+  <img class="img" src="negyedik kep.jpg" alt="20px" height="400px">
+  <p class="p">A következő említést érdemlő kivétel az, ha a felhúzásnál súlyzót használ. A gyakorlat legbonyolultabb fázisánál – amikor a súlyt lefelé viszi – az utolsó fázisnál, amikor az ágyéki gerinc a legjobban meg van terhelve, jobb hagyni a súlyzót hagyni leesni, mint próbálni irányítani. Mind a kettő fent felsorolt kivétel azonban nem jelentik azt, hogy hagyjuk leesés után elgurulni a súlyzót és odalapítani valakinek a lábát, miközben ő a saját gyakorlatára figyel.</p>
+  <h1 class="h1">5. Jógaszőnyeget lassan helyezzük a földre</h1>
+  <p class="p">Megtörtént már Önnel, hogy feküdt a jógaszőnyegén és hirtelen a semmiből megjelent egy idegen és ledobta az edzőszőnyegét közvetlen Ön mellé, mintha ágytakaró lenne? Ha igen, akkor ismeri azt a por és kosz hurrikánt a padlóról, amelyik ellepte. Figyeljen oda jobban és tartsa meg jó viszonyát a többi vendéggel.</p>
+  <img class="img" src="otodik kep.jpg" alt="20px" height="400px">
+  <h1 class="h1">6. Tegyük a helyére a súlyokat</h1>
+  <p class="p">Ha elég erős ahhoz, hogy felemelje a súlyokat, akkor van elég ereje ahhoz is, hogy visszahelyezze őket oda, ahol találta őket. Mindig rakja vissza a súlyokat a helyükre, hogy más is megtalálja azokat.</p>
+  <img class="img" src="hatodik kep.jpg" alt="20px" height="400px">
+  <h1 class="h1">7.Ne bámuljunk!</h1>
+  <p class="p">Oké fiúk, igen, tudjuk, hogy vannak az edzőteremben gyönyörű hölgyek. Tegyen nekik egy szívességet és ne bámulja őket miközben edzenek. És ahogy mi is a tanúi lehettünk, sok nő az edzőteremben keményebben és hatékonyabban edz, mint a legtöbb férfi. Szóval fiúk kevesebb álmodozást és több edzést!
+  </p>
+  <img class="img" src="hetedik kep.jpg" alt="20px" height="400px">
+  <h1 class="h1">8. Ne zavarjuk az embereket szett közben</h1>
+  <p class="p">Szívesen elmondom, hogy már csak két széria maradt a guggolásból, de nem a gyakorlat közepén. Megzavarni valakit edzés közben nem csak, hogy illetlen, de ugyanúgy veszélyes is. Megzavarni a megerőltető edzést sérülést okozhat, vagy az illető elfelejti, hányadik ismétlésnél járt.</p>
+  <img class="img" src="nyolcadik kep.jpg" alt="20px" height="400px">
+  <h1 class="h1">9. Használjon törölközőt</h1>
+  <p class="p">Ez a törvény mindenki számára természetes kell, hogy legyen. Igen, mindannyian izzadunk az edzőteremben, de ez nem azt jelenti, hogy a szétizzadt padra kell lefeküdnünk, mert valaki úgy hagyta. Használjon törölközőt, amit maga alá teríthet, vagy törölje át maga után a padot. Bár így a felületet nem szabadítja meg a vírusoktól vagy az esetleges veszélyes baktériumoktól, de legalább ennyit tegyen meg. Ez olyan, mint a fogmosás vagy a biztonsági öv bekapcsolása az autóban – automatikus kell, hogy legyen.  </p>
+  <img class="img" src="kilencedik kep.jpg" alt="20px" height="400px">
+  <h1 class="h1">10. A mobilt hagyjuk az öltözőben</h1>
+  <p class="p">Ha a telefonján éppen nem zenét hallgat, akkor nincs rá szüksége! Telefonálásra elegendő ideje van napközben és az edzőterem a valóságból való mindennapos elmenekülést kellene, hogy jelentse. A közösségi média és az e-mailek is tudnak várni.</p>
+  <img class="img" src="tizedik kep.jpg" alt="20px" height="400px">
+  <h1 class="h1">11. Egót hagyjuk kint, mielőtt belépünk az edzőterembe</h1>
+  <p class="p">Ez a szabály mindközül a legfontosabb. Mindegyikünk más környezetből származik. Lehet Ironman versenyző, súlyemelő, futó vagy jógaoktató. Lehet szuper fitt, vagy pont az ellentéte. Lehet egy kicsit túlsúlyos, de elegendően merész lett ahhoz, hogy elmenjen az edzőterembe és megváltoztassa az életét.  Nem számít az, hogy milyenek vagyunk miután belépünk az edzőterembe, mind egyenlőek vagyunk. Mindannyian próbálunk jobb, egészségesebb és boldogabb emberek lenni. Ha valakinek segíteni szeretne ha elmegy edzeni, akkor mondjon valami motiválót annak, akivel ott találkozik. Egy egyszerű „jó edzést!” igazán be tudja indítani és inspirálni az embert, hogy holnap is ellátogasson az edzőterembe. Mindenkinek kellemes edzést kívánunk!</p>
+  <img class="img" src="tizenegyedik kep.jpg" alt="20px" height="400px">
+  <p class="p">Az edzőtermi etikett természetes kell, hogy legyen, de mindig találkozunk kivétellel, aki nem ismeri. Tartsa észben ezt a 11 etikett szabályt az edzőteremben, így elkerülheti a kellemetlenségeket.</p>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+
+    var mybutton = document.getElementById("myBtn");
+    
+
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>
+
+  <footer>
+    <img data-v-a4759ba2="logo.png" src="logo.png" alt="logo"
+    >
+    <h6>Mi arra gyúrunk, hogy TE izmos legyél!</h6>
+    <h6>Nyomd keményen, vagy menj haza!</h6>
+    <a href="https://www.google.com/?hl=hu" class="fa fa-google" target="Google"></a>
+    <a href="https://www.facebook.com/" class="fa fa-facebook" target="Facebook"></a>
+    <a href="https://www.instagram.com" class="fa fa-instagram" target="Instagram"></a>
+    </footer>
+</body>
+</html>
